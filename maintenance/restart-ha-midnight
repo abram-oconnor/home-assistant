@@ -1,1 +1,10 @@
-
+alias: Restart HA Midnight
+description: ""
+trigger:
+  - platform: time
+    at: "00:00:00"
+condition: []
+action:
+  - service: homeassistant.restart
+    data: {}
+mode: single
